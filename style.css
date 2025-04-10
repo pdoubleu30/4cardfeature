@@ -1,0 +1,184 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "poppins", serif;
+}
+
+p {
+    font-size: .6rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.top {
+    color: hsl(212, 6%, 44%);
+    font-weight: 200;
+    margin-bottom: -1em;
+}
+
+h3 {
+    margin-bottom: .5em;
+}
+.bottom {
+    margin-bottom: -.3em;
+}
+
+.headtext p {
+    font-weight: 400;
+    font-size: .9em;
+}
+
+.bottom, h3{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10em;
+}
+
+.heading {
+    padding: 2em 0em;
+    padding-bottom: 8.5em;
+
+}
+.headtext {
+    text-align: center;
+
+}
+
+.container {
+    width: 35%;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.wrapper {
+    padding: 0em 4em;
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+}
+.paulsgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em
+}
+
+.text {
+    width: 100%;
+}
+
+.card {
+    border: 1px solid whitesmoke;
+    border-top: 3px solid;
+    max-width: 300px;
+    width: 100%;
+    margin: 1em 1em;
+    padding: 0em 1.5em;
+    border-radius:1.5%;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 1px 5px 10px 2px hsl(210, 12%, 84%)
+}
+
+.card p {
+    margin-top: -1em;
+}
+.card:last-child {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.card.c3{
+    grid-column-start: 2;
+    margin-top: -10em;
+    border-top-color:  hsl(34, 97%, 64%);
+
+    
+}
+
+/*PAUL TRY ADJUSTING THE MARGIN FROM THE IMAGE */
+
+
+
+img {
+    display: block;
+    margin-left: auto;
+}
+
+.card.c1 {
+border-top-color: hsl(180, 62%, 55%);
+margin-bottom: 4em;
+
+}
+
+.card.c2 {
+    margin-top: -6em;
+    margin-bottom: 10em;
+    border-top-color:hsl(0, 78%, 62%);
+}
+
+.card.c4 {
+    border-top-color: hsl(212, 86%, 64%);
+    margin-bottom: 4em;
+}
+
+.c2 {
+    padding-bottom: 2em;
+}
+
+.c3 {
+    padding-bottom: 2em;
+}
+
+@media (max-width: 600px) {
+    .paulsgrid {
+        display: block;
+
+    }
+        .card.c2 {
+            margin-top: unset;
+            margin-bottom: 1.5em;
+        }
+
+        .card.c3 {
+                margin-top: unset;
+                margin-bottom: unset;
+            }
+
+            .wrapper {
+                max-width: 750px;
+                margin: -8em auto;
+                width: 100%;
+        }
+
+            .card {
+                margin: 2em auto;
+                width: 100%;
+            }
+
+            .container {
+                max-width: 750px;
+                width: 75%;
+            }
+
+            .card.c1 {
+                border-top-color: hsl(180, 62%, 55%);
+                padding-bottom: 2em;
+                margin-bottom: 1.5em;
+            }
+
+            .card.c4 {
+                padding-bottom: 2em;
+            }
+
+            .card.c3{
+                margin-bottom: -.5em;
+
+        }
+    }
+
+            
